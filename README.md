@@ -27,7 +27,7 @@ Se han creado tres bases de datos distintas en SQL Server:
 ### Diagrama de Datos
 El diagrama de datos en forma de copo de nieve se puede visualizar perfectamente, permitiendo una clara comprensión de las relaciones entre las diferentes tablas.
 
-![Diagrama Data Warehouse](ruta/a/tu/imagen/Diagrama_DW.png)
+![Diagrama Data Warehouse](Diagrama_DW.png)
 
 ## Herramientas Utilizadas
 - **SQL Server**: Para la creación y gestión de las bases de datos.
@@ -35,12 +35,12 @@ El diagrama de datos en forma de copo de nieve se puede visualizar perfectamente
 - **Power BI**: Para la creación de visualizaciones y análisis de datos.
 
 ## Consultas SQL
-Se respondieron ciertas preguntas que se pueden observar en el pdf llamado "TP-FINAL" mediante consultas SQL, las cuales se llevaron a Power BI como vistas para poder graficar y analizar los datos de manera efectiva.
+Se respondieron ciertas preguntas que se pueden observar en el pdf llamado ![TP Final](TP-FINAL.pdf) mediante consultas SQL, las cuales se llevaron a Power BI como vistas para poder graficar y analizar los datos de manera efectiva.
 
 ## Visualizaciones en Power BI
 Se crearon diversas visualizaciones en Power BI para representar los insights obtenidos del análisis de datos. Aquí puedes ver un ejemplo de las visualizaciones realizadas:
 
-![Dashboard Power BI](Dashboard.pdf)
+![Dashboard Power BI](Dashboard/Dashboard.pdf)
 
 ## Cómo Ejecutar el Proyecto
 
@@ -57,7 +57,7 @@ Se crearon diversas visualizaciones en Power BI para representar los insights ob
    - Ejecutar el contenedor  `Carga BD Intermedia` que realiza la limpieza y transformación de datos.
 
 5. **Crear Dimension Tiempo**:
-   - Ejecutar el script ` `
+   - Ejecutar el script `sp_tiempo` en la base de datos `Intermedia`
 
 7. **Crear Dimensiones y Tabla de Hechos**:
    - Ejecutar los scripts `DIM_Y_FACT.sql`, `MatchFact.sql` que se encuentran en el repositorio para crear las dimensiones y la tabla de hechos, y realizar el match de los datos hacia la base de datos `DataWarehouse`.
@@ -65,6 +65,5 @@ Se crearon diversas visualizaciones en Power BI para representar los insights ob
 8. **Crear Visualizaciones en Power BI**:
    - Importar las vistas SQL a Power BI y crear las visualizaciones necesarias para analizar los datos.
 
-
-
+Por tema de pesos no pude subir al repositorio lo que son los backups de las bases de datos `Staging`, `Intermedia` y `Datawarehouse`
 Si tienes alguna duda o sugerencia, no dudes en contactarme.
