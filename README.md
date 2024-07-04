@@ -48,28 +48,31 @@ Se crearon diversas visualizaciones en Power BI para representar los insights ob
 
 2. **Crear Bases de Datos**:
    - Crear las bases de datos `Staging`, `Intermedia` y `DataWarehouse` en SQL Server.
+   
+3. **Abrir archivo de Visual Studio**:
+   - En la carpeta `VisualStudio-IntegrationServices` se encuentra el archivo `Stg-Int-DW.dtsw` que se debe ejecutar.
 
-3. **Cargar Datos en Staging**:
+4. **Cargar Datos en Staging**:
    - Desde Visual Studio, ejecutar el contenedor `Carga BD Staging` para importar los datos crudos desde todas las fuentes a la base de datos `Staging`.
 
-4. **Limpiar y Modificar Datos**:
+5. **Limpiar y Modificar Datos**:
    - Desde Visual Studio, ejecutar el contenedor `Carga BD Intermedia` que realiza la limpieza y transformación de datos.
 
-5. **Crear Dimensión Tiempo**:
+6. **Crear Dimensión Tiempo**:
    - Ejecutar el script `sp_tiempo` en la base de datos `Intermedia`.
 
-6. **Crear Dimensiones y Tabla de Hechos**:
+7. **Crear Dimensiones y Tabla de Hechos**:
    - Ejecutar el script `DIM_Y_FACT.sql` que se encuentra en el repositorio para crear las dimensiones y la tabla de hechos.
 
-7. **Cargar Datos en DataWarehouse**:
+8. **Cargar Datos en DataWarehouse**:
    - Desde Visual Studio, ejecutar el contenedor `Carga BD DataWarehouse` que realiza la carga de las dimensiones y matchea datos con la tabla de hechos.
 
-8. **Crear Visualizaciones en Power BI**:
+9. **Crear Visualizaciones en Power BI**:
    - Importar las vistas SQL a Power BI y crear las visualizaciones necesarias para analizar los datos.
 
 Para que tengas más claro qué es lo que se visualiza en Visual Studio, debería ser esto:
 
-![VisualStudio 2022](VisualStudio-IntegrationServices/VisualStudio.png)
+![VisualStudio 2022](VisualStudio-IntegrationServices/VisualStudio.jpeg)
 
 Por temas de peso, no pude subir al repositorio lo que son los backups de las bases de datos `Staging`, `Intermedia` y `DataWarehouse`.
 
