@@ -74,6 +74,8 @@ Para que tengas más claro qué es lo que se visualiza en Visual Studio, deberí
 
 ![VisualStudio 2022](VisualStudio-IntegrationServices/VisualStudio.jpeg)
 
-Por temas de peso, no pude subir al repositorio lo que son los backups de las bases de datos `Staging`, `Intermedia` y `DataWarehouse`.
+Por temas de peso, no pude subir al repositorio lo que son los backups de las bases de datos `Staging`, `Intermedia` y `DataWarehouse`. Pero voy a dejar un PDF donde se muestran algunos ejemplos de como quedaria el producto final desde SQLServer hasta VisualStudio y por otro lado ya se encuentra cargado para visualizar los graficos de PowerBI.
+
+![Ejemplos](EjemploDelProductoFinal/Ejemplos.pdf)
 
 Si tienes alguna duda o sugerencia, no dudes en contactarme.
